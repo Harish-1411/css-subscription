@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff; /* Clean white background */
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    text-align: center;
+}
+
+.main-title {
+    background-color: #d87093; /* Pink header */
+    color: black;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.pricing-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #000000; /* Black cards */
+    color: white;
+    width: 200px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.plan-name {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.features {
+    list-style: none;
+    text-align: left;
+    border: 1px solid #333;
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+}
+
+.features li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+    color: #888; /* Dimmed text for unchecked features */
+}
+
+/* Simulated Checkmark */
+.features li.checked {
+    color: white;
+}
+
+.features li::before {
+    content: '○';
+    position: absolute;
+    left: 0;
+    color: #a020f0; /* Purple circles */
+}
+
+.features li.checked::before {
+    content: '✔'; /* You can use FontAwesome icons here instead */
+    font-weight: bold;
+}
